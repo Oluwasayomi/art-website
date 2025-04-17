@@ -1,1 +1,1 @@
-# art-website
+a website exploring art
