@@ -34,8 +34,6 @@ Mobile view:
 
 ![image](https://github.com/user-attachments/assets/090c6564-ea27-4d92-888e-79b053e5bef3)
 
-![image](https://github.com/user-attachments/assets/acc2bd5b-8bc9-41d0-9ac0-01b0194377e3)
-
 ![image](https://github.com/user-attachments/assets/a779ee58-6e5e-437a-9ed7-682c94acad5d)
 
 ![image](https://github.com/user-attachments/assets/d0024f57-bfd7-40d3-887d-1a941a359985)
