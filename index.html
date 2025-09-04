@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="/icon.jpg"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link />
+  <title>Art Website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h4 data-aos="fade-down">The Arts</h4>
+      <div class="header__logo-overlay"></div>
+      </div>
+
+      <ul class="header__menu" data-aos="fade-down">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#types">Types</a>
+        </li>
+        <li>
+          <a href="#categories">Categories</a>
+        </li>
+        <li>
+          <a href="#about-art">About Art</a>
+        </li>
+        <li>
+          <img src="assets/search.svg"
+          alt="search"/>
+        </li>
+        <button class="header__login-button" id="login">Login</button>
+      </ul>
+
+      <ul class="header__menu-mobile" data-aos="fade-down">
+        <li>
+          <img src="assets/menu.svg"
+          alt="menu"/>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <div class="container flex-center" id="container">
+    <div class="login-box" id="loginButton">
+      <form action="">
+        <span class="close-btn" id="closeBtn">&times;</span>
+      <h1>Login</h1>
+  
+      <div class="input-box">
+        <input type="text" required> <label>Username</label>
+      </div>
+  
+      <div class="input-box">
+        <input type="password" required> <label>Password</label>
+      </div>
+  
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember me.</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+  
+      <button class="register-btn" input type="submit" onclick="document.location='index.html'">Login </button>
+  
+      <div class="login-register">
+        <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
+      </div>
+      </form>
+    </div>
+
+    <!--register-->
+    <div class="register" id="register" style="display: none;">
+      <form action="">
+        <span class="close-btn" id="closeBtnRegister">&times;</span>
+      <h1>Register here</h1>
+        <div class="input-box">
+          <input type="text" required> <label>Username</label>
+        </div>
+    
+        <div class="input-box">
+          <input type="email" required> <label>Email</label>
+        </div>
+    
+        <div class="input-box">
+          <input type="password" required> <label>Password</label>
+        </div>
+    
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms and conditions.</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+    
+        <button class="register-btn" input type="submit" onclick="document.location='index.html'">Register </button>
+    
+        <div class="login-register">
+          <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+        </form>
+    </div>
+  </div>
+
+  <section class="home">
+    <div class="home-image">
+      <img 
+      src="assets/red woman.png" 
+      alt="woman"
+      data-aos="fade-up"/>
+      <h2 data-aos="fade-up">
+        A <br />
+        R <br />
+        T 
+      </h2>
+      <div class="home-image__overlay"></div>
+    </div>
+
+    <div class="home-content">
+      <div class="home-content-info" data-aos="fade-left">
+        <h1>Explore the different types of art</h1>
+        <p>Art is so diverse and spread out that you need to try them yourself to find your favourite.</p>
+        <div class="home-content__buttons">
+          <button class="home-content__explore-button">Explore</button>
+          <button class="home-content__play-button">
+          <img src="assets/play-circle.svg" alt="play"/>
+          How to Explore
+          </button>
+        </div>
+      </div>
+      
+      <div class="home-content__testimonial" data-aos="fade-up">
+        <div class="home-content__artist flex-center">
+        <h4>6.2<span>B+</span></h4> 
+        <p>Happy Artists</p>
+        </div>
+        
+        <div class="home-content__review">
+          <img src="assets/user.png" alt="user"/>
+          <p>"Art is the language that expresses my inner world in a way other languages can't."</p>
+        </div>
+      </div>
+  
+    </div>
+
+  </section>
+
+  <section class="about-art" id="about-art">
+    <div class="about-art__image">
+      <div class="about-art__image-books">
+        <img src="assets/falling-books.png" alt="falling books" data-aos="fade-right"/>
+      </div>
+
+      <button class="about-art__button"> 
+        Learn More
+        <img src="assets/arrow-up-right.svg" alt="learn more"/>
+      </button>
+
+      <div class="about-art__image-piano">
+        <img src="assets/man-piano.png" alt="piano" data-aos="fade-right"/>
+      </div>
+    </div>
+
+    <div class="about-art__content" data-aos="fade-left">
+      <p class="art__subtitle">About Art</p>
+      <h3 class="art__title">Do you know why Art has such beauty and joy?</h3>
+      <p class="art_description">Art evokes a range of emotions, has thought-provoking meaning, reflects our culture and beliefs, creates a connection among individuals, expresses our creativity and originality, provides an escape from reality, and is also quite beautiful. 
+      <br>Art is not only a way of expression, but also a means of communication.</p>
+
+    </div>
+
+  </section>
+
+  <section class="art-types" id="types">
+    <h2 class="art-types__title" data-aos="flip-up">Types of Art</h2>
+
+    <div class="art-types__filters art__hide-scrollbar" data-aos="fade-up">
+      <button class="art-types__filter-btn active" data-category="all">All</button>
+      <button class="art-types__filter-btn" data-category="painting"><img src="/assets/mini bg.jpg"/>Painting</button>
+      <button class="art-types__filter-btn" data-category="drawing"><img src="/assets/pencils.jpg"/>Drawing</button>
+      <button class="art-types__filter-btn" data-category="sculpture"><img src="/assets/sculpture.png"/>Sculpture</button>
+      <button class="art-types__filter-btn" data-category="architecture"><img src="/assets/blueprint.jpg"/>Architecture</button>
+      <button class="art-types__filter-btn" data-category="music"><img src="/assets/aural-music.png"/>Music</button>
+      <button class="art-types__filter-btn" data-category="theater"><img src="/assets/masks.png"/>Theater</button>
+      <button class="art-types__filter-btn" data-category="cinema"><img src="/assets/camera.png"/>Cinema</button>
+      <button class="art-types__filter-btn" data-category="literature"><img src="/assets/book-tea.png" />Literature</button>
+      <button class="art-types__filter-btn" data-category="others">Others</button>
+    </div>
+
+    <div class="art-types__catalogue" data-aos="fade-up">
+      <!--Articles for All Category-->
+      <article class="art-types__card" data-category="all">
+        <img class="art-types__card-image" src="assets/love-mail.png" alt="Crafts"/>
+        <h4 class="art-types__card-title">Arts & Crafts</h4>
+      </article>
+
+      <article class="art-types__card active-card" data-category="all">
+        <img class="art-types__card-image" src="assets/fairytale-book.jpg" alt="Storytelling"/>
+        <h4 class="art-types__card-title">Storytelling</h4>
+      </article>  
+
+      <article class="art-types__card" data-category="all">
+        <img class="art-types__card-image" src="assets/notebook.png" alt="Writing"/>
+        <h4 class="art-types__card-title">Writing</h4>
+      </article>
+
+      <!--Articles for Painting Category-->
+      <!--oil, watercolor, arcylic, chalk, pencil, dye-->
+      <article class="art-types__card" data-category="painting">
+        <img class="art-types__card-image" src="assets/oil-painting.png" alt="Oil painting"/>
+        <h4 class="art-types__card-title">Oil Painting</h4>
+      </article>
+
+      <article class="art-types__card active-card" data-category="painting">
+        <img class="art-types__card-image" src="assets/watercolor-painting.png" alt="Watercolor painting"/>
+        <h4 class="art-types__card-title">Watercolor Painting</h4>
+      </article>
+
+      <article class="art-types__card" data-category="painting">
+        <img class="art-types__card-image" src="assets/arcylic-painting.png" alt="Arcylic painting"/>
+        <h4 class="art-types__card-title">Arcylic Painting</h4>
+      </article>
+
+      <article class="art-types__card" data-category="painting">
+        <img class="art-types__card-image" src="assets/chalk-painting.png" alt="Chalk painting"/>
+        <h4 class="art-types__card-title">Chalk Painting</h4>
+      </article>
+
+      <article class="art-types__card" data-category="painting">
+        <img class="art-types__card-image" src="assets/pencil-painting.png" alt="Pencil painting"/>
+        <h4 class="art-types__card-title">Pencil Painting</h4>
+      </article>
+
+      <article class="art-types__card" data-category="painting">
+        <img class="art-types__card-image" src="assets/dye-painting.png" alt="Dye painting"/>
+        <h4 class="art-types__card-title">Dye Painting</h4>
+      </article>
+
+      <!--Articles for Drawing Category-->
+      <!--Cartoon drawing, figure drawing, line drawing, perspective drawing, photorealism, scientific illustration, scratchboard drawing, sketch drawing, technical drawing-->
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/cartoon-drawing.png" alt="Cartoon drawing"/>
+        <h4 class="art-types__card-title">Cartoon drawing</h4>
+      </article>
+
+      <article class="art-types__card active-card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/figure-drawing.png" alt="Figure drawing"/>
+        <h4 class="art-types__card-title">Figure drawing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/butterfly.png" alt="Line drawing"/>
+        <h4 class="art-types__card-title">Line drawing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/perspective-drawing.png" alt="Perspective drawing"/>
+        <h4 class="art-types__card-title">Perspective drawing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/photorealism.png" alt="Photorealism"/>
+        <h4 class="art-types__card-title">Photorealism</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/scientific-illustration.png" alt="Scientific Illustration"/>
+        <h4 class="art-types__card-title">Scientific illustration</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/sketchboard-drawing.png" alt="Sketchboard drawing"/>
+        <h4 class="art-types__card-title">Scratchboard drawing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/sketch-drawing.png" alt="Sketch drawing"/>
+        <h4 class="art-types__card-title">Sketch drawing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="drawing">
+        <img class="art-types__card-image" src="assets/technical-drawing.png" alt="Technical drawing"/>
+        <h4 class="art-types__card-title">Technical drawing</h4>
+      </article>
+
+      <!--Articles for Sculpture Category-->
+      <!--Metal, Ceramics, Wood, sand, glass, paper, marble-->
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Metal Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Ceramics Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Wood Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Sand Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Glass Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Paper Sculpture</h4>
+      </article>
+
+      <article class="art-types__card" data-category="sculpture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Metal Sculpture"/>
+        <h4 class="art-types__card-title">Marble Sculpture</h4>
+      </article>
+
+      <!--Articles for Architecture Category-->
+      <!--designing, constructing, crafts-->
+      <article class="art-types__card" data-category="architecture">
+        <img class="art-types__card-image" src="assets/designing.png" alt="Designing"/>
+        <h4 class="art-types__card-title">Designing</h4>
+      </article>
+
+      <article class="art-types__card active-card" data-category="architecture">
+        <img class="art-types__card-image" src="assets/constructing.png" alt="Constructing"/>
+        <h4 class="art-types__card-title">Constructing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="architecture">
+        <img class="art-types__card-image" src="assets/love-mail.png" alt="Crafts"/>
+        <h4 class="art-types__card-title">Arts & Crafts</h4>
+      </article>
+
+      <!--Articles for Music Category-->
+
+      <!--Articles for Theater Category-->
+
+      <!--Articles for Cinema Category-->
+
+      <article class="art-types__card" data-category="cinema">
+        <img class="art-types__card-image" src="assets/fairytale-book.jpg" alt="Storytelling"/>
+        <h4 class="art-types__card-title">Storytelling</h4>
+      </article> 
+
+      <!--Articles for Literature Category-->
+
+      <article class="art-types__card" data-category="literature">
+        <img class="art-types__card-image" src="assets/notebook.png" alt="Writing"/>
+        <h4 class="art-types__card-title">Writing</h4>
+      </article>
+
+      <article class="art-types__card" data-category="literature">
+        <img class="art-types__card-image" src="assets/fairytale-book.jpg" alt="Storytelling"/>
+        <h4 class="art-types__card-title">Storytelling</h4>
+      </article> 
+
+      <!--Articles for Others Category-->
+
+      <article class="art-types__card active-card" data-category="others">
+        <img class="art-types__card-image" src="assets/victorian pattern.png" alt="anything you love"/>
+        <h4 class="art-types__card-title">Anything That Fits Art's Description</h4>
+      </article>
+
+    </div>
+
+    <button class="art-types__button">
+      Explore Art
+      <img src="/assets/arrow-right.svg" alt="arrow-right">
+    </button>
+    
+  </section>
+
+  <section class="categories" id="categories">
+
+    <section class="categories-left">
+      <div class="categories__content" data-aos="fade-right">
+        <p class="art__subtitle">Art Categories/What Art Do You Like?</p>
+        <h3 class="art__title">Visual Arts</h3>
+        <p class="art__description">Curious on what exactly it entails? See below;</p>
+        <ul class="categories__list flex-between">
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Painting</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Drawing</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Sculpture</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Architecture</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="categories__image flex-center">
+        <img src="assets/cat-painting.png" 
+        alt="cat painting" data-aos="fade-left"/>
+
+        <div class="categories__arrow categories__arrow-left">
+          <img src="assets/arrow-vertical.svg" alt="arrow-vertical"/>
+        </div>
+
+        <div class="categories__arrow categories__arrow-bottom">
+          <img src="assets/arrow-horizontal.svg" alt="arrow-horizontal"/>
+        </div>
+      </div>
+    </section>
+
+    <div class="categories__discover" data-aos="zoom-in">
+      <p>Discover</p>
+    </div>
+
+    <section class="categories-right">
+      <div class="categories__image flex-center">
+        <img src="assets/camera.png" 
+        alt="camera" data-aos="fade-right"/>
+  
+        <div class="categories__arrow categories__arrow-top">
+          <img src="assets/arrow-horizontal.svg" alt="arrow-horizontal"/>
+        </div>
+  
+        <div class="categories__arrow categories__arrow-right">
+          <img src="assets/arrow-vertical.svg" alt="arrow-vertical"/>
+        </div>
+      </div>
+
+      <div class="categories__content" data-aos="fade-left">
+        <p class="art__subtitle">Art Categories/What Art Do You Like?</p>
+        <h3 class="art__title">Performing Arts</h3>
+        <p class="art__description">Curious on what exactly it entails? See below;</p>
+        <ul class="categories__list flex-between">
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Music</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Theater</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Cinema</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="categories__discover1" data-aos="zoom-in">
+      <p>Discover</p>
+    </div>
+
+    <section class="categories-left">
+      <div class="categories__content" data-aos="fade-right">
+        <p class="art__subtitle">Art Categories/What Art Do You Like?</p>
+        <h3 class="art__title">Literary Arts</h3>
+        <p class="art__description">Curious on what exactly it entails? See below;</p>
+        <ul class="categories__list flex-between">
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Written Literature</p>
+          </li>
+
+          <li>
+            <div class="categories__icon flex-center">
+              <img src="assets/check.svg" alt="check"/>
+            </div>
+            <p>Spoken Literature</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="categories__image flex-center">
+        <img src="assets/scroll.png" 
+        alt="scroll" data-aos="fade-left"/>
+
+        <div class="categories__arrow categories__arrow-top1">
+          <img src="assets/arrow-horizontal.svg" alt="arrow-horizontal"/>
+        </div>
+
+        <div class="categories__arrow categories__arrow-left1">
+          <img src="assets/arrow-vertical.svg" alt="arrow-vertical"/>
+        </div>
+
+        <div class="categories__arrow categories__arrow-bottom1">
+          <img src="assets/arrow-horizontal.svg" alt="arrow-horizontal"/>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="subscription flex-center" id="services">
+    <h2 data-aos="flip-down">
+      Get started with <br />
+      your desired art today
+    </h2>
+    <p data-aos="fade-up">Have some confidence in yourself!</p>
+
+    <div class="subscription__form" data-aos="fade-up">
+      <input type="text" placeholder="Are you ready?"/>
+      <button>Get better</button>
+    </div>
+  </section>
+
+  <footer class="footer flex-between">
+    <h3 class="footer_logo">
+      <span>The</span> Arts
+    </h3>
+    <ul class="footer__nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#types">Types</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#about-art">About Art</a></li>
+    </ul>
+    <ul class="footer__social">
+      <li class="flex-center">
+        <img src="assets/facebook.svg" alt="facebook"/>
+      </li>
+      <li class="flex-center">
+        <img src="assets/instagram.svg" alt="instagram"/>
+      </li>
+      <li class="flex-center">
+        <img src="assets/twitter.svg" alt="twitter"/>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
