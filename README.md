@@ -19,7 +19,8 @@ Here are the website's features:
 * Pop Up Login/Register form.
 * Categorised and filtered objects by the art type.
 * Animated buttons.
-* Complementary colours used as background.'Aesthetically pleasing visualisation and interaction.
+* Complementary colours used as background.
+* Aesthetically pleasing visualisation and interaction.
 * Animated scrolling.
 * Dynamic animations.
 
