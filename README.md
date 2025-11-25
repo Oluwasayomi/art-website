@@ -1,3 +1,5 @@
+<img width="1542" height="921" alt="Screenshot 2025-04-22 003724" src="https://github.com/user-attachments/assets/0f5c35a1-214c-43ae-a184-b842df17e828" />
+
 ## 🎨 Art Website 
 
 An animated website exploring art, shedding more light on the various types/categories of art. Following the duty of any art, the design was also made to reflect an artistic mindset, using colour theory, artistic images, and ensuring that it all worked together to create a visually appealing user interface.
